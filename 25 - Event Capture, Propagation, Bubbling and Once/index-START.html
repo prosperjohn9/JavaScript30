@@ -43,7 +43,15 @@
 
 <button></button>
 <script>
+  const divs = document.querySelectorAll('div');
 
+  function logText(e) {
+    console.log(`The text of the clicked element is ${this.textContent}`);
+    //e.stopPropagation();
+  }
+  divs.forEach(div => div.addEventListener('click', logText) {
+    once: true;
+  });
 </script>
 </body>
 </html>
